@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember &amp; Egg — Twilight Kitchen</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; background: #14101c; height: 100%;
+    display: flex; align-items: flex-start; justify-content: center;
+    overflow: hidden;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  }
+  #wrap { width: 1280px; max-width: 100vw; }
+  canvas {
+    display: block; width: 100%; height: auto; background: #1a2340;
+    border-radius: 8px; box-shadow: 0 0 60px rgba(0,0,0,0.6);
+  }
+  #hint {
+    color: #ffe9b0; text-align: center; font-size: 14px; margin-top: 10px;
+  }
+  #hint b { color: #ffd94d; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint"><b>Ember &amp; Egg — Twilight Kitchen.</b> WASD / arrows to move, E or click to grab &amp; use, M mute, P pause, R restart.</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
